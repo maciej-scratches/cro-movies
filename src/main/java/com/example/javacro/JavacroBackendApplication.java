@@ -24,6 +24,7 @@ public class JavacroBackendApplication {
         return args -> {
             movieRepository.save(new Movie("Fight Club", "https://m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0MC00YTVjLTg5ZTEtZWMwOWVlYzY0NWIwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"));
             movieRepository.save(new Movie("Bourne Identity", "https://m.media-amazon.com/images/M/MV5BM2JkNGU0ZGMtZjVjNS00NjgyLWEyOWYtZmRmZGQyN2IxZjA2XkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg"));
+            movieRepository.save(new Movie("Independence Day", "https://m.media-amazon.com/images/I/51+wqGIDRJL._AC_.jpg"));
         };
     }
 }
