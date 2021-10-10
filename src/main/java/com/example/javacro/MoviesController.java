@@ -24,10 +24,6 @@ public class MoviesController {
     @GetMapping("/movies")
     List<MovieDTO> movies() {
         LOGGER.info("Loading movies");
-        List<MovieDTO> movies = movieService.movies();
-        if (random.nextInt() % 3 == 0) {
-            throw new IllegalStateException("something went wrooong");
-        }
-        return movies;
+        return movieService.movies();
     }
 }
